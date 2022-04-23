@@ -1,5 +1,8 @@
 let isPainting = false;
-document.body.onmousedown = () => (isPainting = true);
+document.body.onmousedown = (e) => {
+	e.preventDefault();
+	isPainting = true};
+
 document.body.onmouseup = () => (isPainting = false );
 
 function populatePage(size){
@@ -23,8 +26,11 @@ for(var i = 0; i < amount; i++){
 function colorSquare(e){
 	if(isPainting){
 		this.style.backgroundColor = 'black';
-		console.log("Painting");
 	}
+}
+
+function changeSize(input){
+populatePage(input);
 }
 
 populatePage(16);

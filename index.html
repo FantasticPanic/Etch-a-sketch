@@ -11,7 +11,7 @@
 	<div class="flex-container">
 <div class="header">
 	<h1>Etch a Sketch</h1>
-	<h2></h2>
+	<h2>The new scenet by Ramsay</h2>
 </div>
 <div class="content">
 	<div class="board"></div>
@@ -22,7 +22,11 @@
 		<button>Reset</button>
 	</div>
 </div>
-<button>Set Size</button>
+<input type="text"  placeholder="size of board" value= '16' onchange="changeSize(this.value)"/>
+<button>16x16</button>
+<button>32x32</button>
+<button>64x64</button>
+
 </div>
 </body>
 <script src="main.js"></script>
