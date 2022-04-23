@@ -1,5 +1,3 @@
-
-
 let isPainting = false;
 document.body.onmousedown = () => (isPainting = true);
 document.body.onmouseup = () => (isPainting = false );
@@ -31,12 +29,4 @@ function colorSquare(e){
 
 populatePage(16);
 
-function changeSize(input){
- if(input >= 2 && input <= 100){
- populatePage(input);
-
-	} else {
-		console.log('too many squares');	
-	}
-}
 
