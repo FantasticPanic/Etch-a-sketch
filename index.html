@@ -8,7 +8,7 @@
 	<title>Etch-a-Sketch</title>
 </head>
 <body>
-	<div class="flex-container">
+<div class="flex-container">
 <div class="header">
 	<h1>Etch a Sketch</h1>
 	<h2>The new scenet by Ramsay</h2>
@@ -16,17 +16,16 @@
 <div class="content">
 	<div class="board"></div>
 		<div class="buttons">
-		<button>Black</button>
-		<button>Erase</button>
-		<button>Random</button>
-		<button>Reset</button>
+		<button onclick="changeColor('black')">Black</button>
+		<button onclick="changeColor('white')">Erase</button>
+		<button onclick="changeColor('random')">Random</button>
+		<button onclick="resetBoard()">Reset</button>
 	</div>
 </div>
-<input type="text"  placeholder="size of board" value= '16' onchange="changeSize(this.value)"/>
-<button>16x16</button>
-<button>32x32</button>
-<button>64x64</button>
 
+<button onclick="changeSize(16)">16x16</button>
+<button onclick="changeSize(32)">32x32</button>
+<button onclick="changeSize(64)">64x64</button>
 </div>
 </body>
 <script src="main.js"></script>
