@@ -11,8 +11,40 @@
 	align-items: center;
 }
 
+.content{
+	display: flex;
+}
 
+.buttons{
+	display: flex;
+	flex-direction: column;
+}
+
+.buttons input{
+	display: grid;
+	width: 25px;
+	height: 25px;
+}
 
 body{
 	background-color: lightblue;
+}
+
+#black{
+	background-color: black;
+}
+
+#white{
+	background-color: white;
+}
+
+#random{
+	background-color: transparent;
+	width: 25px;
+	height:  25px;
+}
+
+#reset{
+	background-color: white;
+
 }

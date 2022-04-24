@@ -11,16 +11,16 @@
 <div class="flex-container">
 <div class="header">
 	<h1>Etch a Sketch</h1>
-	<h2>The new scenet by Ramsay</h2>
+	<h2>The new scent by Ramsay</h2>
 </div>
 <div class="content">
-	<div class="board"></div>
-		<div class="buttons">
-		<button onclick="changeColor('black')">Black</button>
-		<button onclick="changeColor('white')">Erase</button>
-		<button onclick="changeColor('random')">Random</button>
-		<button onclick="resetBoard()">Reset</button>
+	<div class="buttons">
+		<input type="button" id="black" onclick="changeColor('black')"></input>
+		<input type="button" id="white" onclick="changeColor('white')"></input>
+		<input type= "image" src="imgs/rainbow.png" id="random" onclick="changeColor('random')"></input>
+		<input type="image" src="imgs/reset.png" id="reset" onclick="resetBoard()">Reset</input>
 	</div>
+	<div class="board"></div>		
 </div>
 
 <button onclick="changeSize(16)">16x16</button>
