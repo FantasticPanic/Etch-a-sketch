@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&display=swap');
+
+
 .board{
 	width: 500px;
 	height:  500px;
@@ -18,21 +22,69 @@
 .buttons{
 	display: flex;
 	flex-direction: column;
+	padding: 0.5em;
+	gap:  1px;
 }
 
 .buttons input{
-	display: grid;
 	width: 25px;
 	height: 25px;
+	border: 2px solid black;
 }
 
 body{
 	background-color: lightblue;
 }
 
-
-
-#reset{
-	background-color: white;
-
+button{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #808080;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-family: 'Domine', serif;
 }
+
+button:hover {
+	background-color: #3e8e41
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+input:hover {
+	border:  2px dotted #3e8e41;
+}
+
+input:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.dimension-buttons{
+	margin: 1em;
+	justify-content: center;
+	display: flex;
+	gap:  40px;
+}
+
+.header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Domine', serif;
+}
+
+
+

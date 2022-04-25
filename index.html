@@ -9,41 +9,43 @@
 	<title>Etch-a-Sketch</title>
 </head>
 <body>
-<div class="flex-container">
-<div class="header">
-	<h1>Etch a Sketch</h1>
-	<h2>The new scent by Ramsay</h2>
-</div>
-<div class="content">
-	<div class="buttons">
-		<input type="button" id="black" onclick="changeColor('black')"></input>
-		<input type="button" id="white" onclick="changeColor('white')"></input>
-		<input type="button" id="grey" onclick="changeColor('grey')"></input>
-		<input type="button" id="lightgrey" onclick="changeColor('lightgrey')"></input>
-		<input type="button" id="darkred" onclick="changeColor('maroon')"></input>
-		<input type="button" id="brown" onclick="changeColor('brown')"></input>
-		<input type="button" id="red" onclick="changeColor('red')"></input>
-		<input type="button" id="pink" onclick="changeColor('pink')"></input>
-		<input type="button" id="orange" onclick="changeColor('darkorange')"></input>
-		<input type="button" id="lightorange" onclick="changeColor('orange')"></input>
-		<input type="button" id="yellow" onclick="changeColor('yellow')"></input>
-		<input type="button" id="lightyellow" onclick="changeColor('lightyellow')"></input>
-		<input type="button" id="green" onclick="changeColor('green')"></input>
-		<input type="button" id="lightgreen" onclick="changeColor('lightgreen')"></input>
-		<input type="button" id="blue" onclick="changeColor('blue')"></input>
-		<input type="button" id="lightblue" onclick="changeColor('lightblue')"></input>
-		<input type="button" id="purple" onclick="changeColor('purple')"></input>
-		<input type="button" id="lightpurple" onclick="changeColor('violet')"></input>
-		<input type= "image" src="imgs/rainbow.png" id="random" onclick="changeColor('random')"></input>
-		<input type="image" src="imgs/reset.png" id="reset" onclick="resetBoard()"></input>
+	<div class="flex-container">
+		<div class="header">
+			<h1>Etch a Sketch</h1>
+		</div>
+		<div class="content">
+			<div class="buttons">
+				<input type="button" id="black" onclick="changeColor('black')"></input>
+				<input type="button" id="white" onclick="changeColor('white')"></input>
+				<input type="button" id="grey" onclick="changeColor('grey')"></input>
+				<input type="button" id="lightgrey" onclick="changeColor('lightgrey')"></input>
+				<input type="button" id="darkred" onclick="changeColor('maroon')"></input>
+				<input type="button" id="brown" onclick="changeColor('brown')"></input>
+				<input type="button" id="red" onclick="changeColor('red')"></input>
+				<input type="button" id="pink" onclick="changeColor('pink')"></input>
+				<input type="button" id="orange" onclick="changeColor('darkorange')"></input>
+				<input type="button" id="lightorange" onclick="changeColor('orange')"></input>
+				<input type="button" id="yellow" onclick="changeColor('yellow')"></input>
+				<input type="button" id="lightyellow" onclick="changeColor('lightyellow')"></input>
+				<input type="button" id="green" onclick="changeColor('green')"></input>
+				<input type="button" id="lightgreen" onclick="changeColor('lightgreen')"></input>
+				<input type="button" id="blue" onclick="changeColor('blue')"></input>
+				<input type="button" id="lightblue" onclick="changeColor('deepskyblue')"></input>
+				<input type="button" id="purple" onclick="changeColor('purple')"></input>
+				<input type="button" id="lightpurple" onclick="changeColor('violet')"></input>
+				<input type= "image" src="imgs/rainbow.png" id="random" onclick="changeColor('random')"></input>
+			</div>
+			<div class="board"></div>	
+			<div class="buttons">
+				<input type="image" src="imgs/reset2.png" id="reset" onclick="resetBoard()"></input>	
+			</div>
+		</div>
+		<div class="dimension-buttons">
+			<button onclick="changeSize(16)">16 x 16</button>
+			<button onclick="changeSize(32)">32 x 32</button>
+			<button onclick="changeSize(64)">64 x 64</button>
+		</div>
 	</div>
-	<div class="board"></div>		
-</div>
-
-<button onclick="changeSize(16)">16x16</button>
-<button onclick="changeSize(32)">32x32</button>
-<button onclick="changeSize(64)">64x64</button>
-</div>
 </body>
 <script src="main.js"></script>
 </html>
