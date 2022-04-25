@@ -19,7 +19,7 @@ document.body.onmousedown = (e) => {
 			let square = document.createElement('div')
 			square.addEventListener('mouseover',colorSquare);
 			square.addEventListener('mousedown',colorSquare);
-			square.style.border = '1px solid lightgrey';
+			square.style.border = '1px solid lightslategrey';
 			square.style.backgroundColor = 'white';
 			board.insertAdjacentElement('beforeend',square);
 		}

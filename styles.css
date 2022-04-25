@@ -30,19 +30,7 @@ body{
 	background-color: lightblue;
 }
 
-#black{
-	background-color: black;
-}
 
-#white{
-	background-color: white;
-}
-
-#random{
-	background-color: transparent;
-	width: 25px;
-	height:  25px;
-}
 
 #reset{
 	background-color: white;

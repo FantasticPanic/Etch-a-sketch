@@ -1,0 +1,77 @@
+#black{
+	background-color: black;
+}
+
+#white{
+	background-color: white;
+}
+
+#grey{
+	background-color: grey;
+}
+
+#lightgrey{
+    background-color: lightgrey;
+}
+
+#darkred{
+	background-color: maroon ;
+}
+
+#brown{
+	background-color: brown;
+}
+
+#red{
+	background-color: red;
+}
+
+#pink{
+	background-color: pink;
+}
+
+#orange{
+	background-color: darkorange;
+}
+
+#lightorange{
+    background-color: orange;
+}
+
+#yellow{
+	background-color: yellow ;
+}
+
+#lightyellow{
+	background-color: lightyellow;
+}
+
+#green{
+	background-color: green;
+}
+
+#lightgreen{
+	background-color: lightgreen;
+}
+
+#blue{
+	background-color: blue;
+}
+
+#lightblue{
+    background-color: lightblue
+}
+
+#purple{
+	background-color: purple ;
+}
+
+#lightpurple{
+	background-color: violet;
+}
+
+#random{
+	background-color: transparent;
+	width: 25px;
+	height:  25px;
+}
