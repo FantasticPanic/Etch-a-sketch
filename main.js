@@ -1,14 +1,19 @@
+let board = document.querySelector(".board");
 let isPainting = false;
+let isOverGrid = false;
 let color = 'black';
+
 
 document.body.onmousedown = (e) => {
 	e.preventDefault();
-	isPainting = true};
+	isPainting = true
+	console.log(isPainting)
+};
 
 	document.body.onmouseup = () => (isPainting = false );
 
 	function populatePage(size){
-		let board = document.querySelector(".board");
+
 		let squares = board.querySelectorAll("div");
 		squares.forEach((div) => div.remove());
 		board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
@@ -18,13 +23,19 @@ document.body.onmousedown = (e) => {
 		for(var i = 0; i < amount; i++){
 			let square = document.createElement('div')
 			square.addEventListener('mouseover',colorSquare);
-			square.addEventListener('mousedown',colorSquare);
+			square.addEventListener('mousedown',clickColorSquare);
 			square.style.border = '1px solid lightslategrey';
 			square.style.backgroundColor = 'white';
 			board.insertAdjacentElement('beforeend',square);
 		}
 	}
 
+	function clickColorSquare(e){
+			this.style.backgroundColor = color;
+			if(color === 'random'){
+				this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+			}
+		}
 
 	function colorSquare(e){
 		if(isPainting){
